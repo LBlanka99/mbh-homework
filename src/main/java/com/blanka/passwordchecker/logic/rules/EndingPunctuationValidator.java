@@ -1,4 +1,4 @@
-package com.blanka.passwordchecker.logic;
+package com.blanka.passwordchecker.logic.rules;
 
 import java.util.ArrayList;
 import java.util.List;

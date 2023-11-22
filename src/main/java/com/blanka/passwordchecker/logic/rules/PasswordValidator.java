@@ -1,4 +1,4 @@
-package com.blanka.passwordchecker.logic;
+package com.blanka.passwordchecker.logic.rules;
 
 public interface PasswordValidator {
 
