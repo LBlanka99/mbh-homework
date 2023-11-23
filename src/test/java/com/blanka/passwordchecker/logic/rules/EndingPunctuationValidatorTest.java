@@ -28,4 +28,11 @@ class EndingPunctuationValidatorTest {
         boolean result = validator.isValid(password);
         assertFalse(result);
     }
+
+    @Test
+    void testWhenThereIsOnlyOneCharacter() {
+        String password = "?";
+        boolean result = validator.isValid(password);
+        assertTrue(result);
+    }
 }
