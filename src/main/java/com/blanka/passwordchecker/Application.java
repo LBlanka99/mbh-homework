@@ -26,7 +26,6 @@ public class Application {
         );
 
         CorrectPasswordCalculator calculator = new CorrectPasswordCalculator(FILE_PATH, rules);
-        int result = calculator.run();
-        System.out.println(result);
+        calculator.run();
     }
 }
