@@ -21,6 +21,7 @@ public class CorrectPasswordCalculator {
     }
 
     public void run() {
+        //read data from file
         var data = FileReader.readFile(FILE_PATH);
         List<String> sentences;
         if (data.isPresent()) {
@@ -30,6 +31,7 @@ public class CorrectPasswordCalculator {
             return;
         }
 
+        //check every not blank sentence with every validator & count the right ones
         int counter = 0;
         for (String password : sentences) {
             if (inputChecker.isInputBlankOrNull(password)) {
