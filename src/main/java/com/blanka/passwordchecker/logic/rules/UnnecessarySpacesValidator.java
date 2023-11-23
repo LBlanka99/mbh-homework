@@ -10,10 +10,13 @@ public class UnnecessarySpacesValidator implements PasswordValidator {
             return false;
         }
 
-        int charBeforePunctuation = password.charAt(password.length() - 2);
-        if (charBeforePunctuation == SPACE) {
-            return false;
+        if (password.length() >= 2) {
+            int charBeforePunctuation = password.charAt(password.length() - 2);
+            if (charBeforePunctuation == SPACE) {
+                return false;
+            }
         }
+
 
         String[] words = password.split(" ");
         for (String word : words) {
