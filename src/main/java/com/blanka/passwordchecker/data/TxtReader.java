@@ -8,8 +8,8 @@ import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class FileReader {
-    private static final Logger LOGGER = Logger.getLogger(FileReader.class.getName());
+public class TxtReader {
+    private static final Logger LOGGER = Logger.getLogger(TxtReader.class.getName());
 
     public static Optional<List<String>> readFile(String filename) {
         Optional<List<String>> sentences = Optional.empty();

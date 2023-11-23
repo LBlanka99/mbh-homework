@@ -1,6 +1,6 @@
 package com.blanka.passwordchecker.logic;
 
-import com.blanka.passwordchecker.data.FileReader;
+import com.blanka.passwordchecker.data.TxtReader;
 import com.blanka.passwordchecker.logic.inputchecker.InputChecker;
 import com.blanka.passwordchecker.logic.rules.PasswordValidator;
 import com.blanka.passwordchecker.ui.Screen;
@@ -22,7 +22,7 @@ public class CorrectPasswordCalculator {
 
     public void run() {
         //read data from file
-        var data = FileReader.readFile(FILE_PATH);
+        var data = TxtReader.readFile(FILE_PATH);
         List<String> sentences;
         if (data.isPresent()) {
             sentences = data.get();
