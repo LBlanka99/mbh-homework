@@ -30,10 +30,10 @@ public class Application {
         //put all validators in a list
         return new ArrayList<>(
                 List.of(endingPunctuationValidator,
+                        unnecessarySpacesValidator,
                         lengthValidator,
                         lowerCaseLetterValidator,
-                        uniqueWordsValidator,
-                        unnecessarySpacesValidator)
+                        uniqueWordsValidator)
         );
     }
 }
